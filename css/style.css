@@ -35,9 +35,26 @@ a {
 }
 
 .btn {
-    padding: 8px 12px;
+    font-size: 14px;
+    padding: 12px 16px;
     border-radius: 20px;
     background-color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.wave img {
+    width: 100%;
+    filter: invert(100%);
+    margin-bottom: -4px;
+}
+
+.wave-gray img {
+    filter: invert(100%) brightness(83%);
+}
+
+.wave-white {
+    background-color: lightgray;
 }
 
 /*XXXXXXXXXXXXXXXXXX
@@ -83,6 +100,7 @@ XXXXXXXXXXXXXXXXXXX*/
 
 .header-section ul li {
     padding: 8px;
+    font-weight: 500;
 }
 
 /*XXXXXXXXXXXXXXXXXX
@@ -111,6 +129,11 @@ XXXXXXXXXXXXXXXXXXX*/
 
 #hero h1 {
     padding: 20px;
+}
+
+#hero p {
+    width: 70%;
+    text-align: center;
 }
 
 .hero-btn-cont {
@@ -174,6 +197,13 @@ XXXXXXXXXXXXXXXXXXXX*/
     width: 100%;
 }
 
+.background-star>span {
+    padding: 20px;
+    background-image: url('../img/stars.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .block-column .btn {
     background-color: var(--text-color);
     color: #fff;
@@ -186,15 +216,14 @@ XXXXXXXXXXXXXXXXXX*/
 footer {
     background-color: #000;
     color: #fff;
+    padding: 36px 0;
 }
 
 footer .footer-sect {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000;
     padding: 12px 0 36px;
-    border-bottom: 2px solid gray;
 }
 
 .div-foot-sect {
@@ -202,10 +231,24 @@ footer .footer-sect {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    border-bottom: 2px solid gray;
 }
 
 .foot-coral {
     width: 33%;
+}
+
+.foot-coral>span {
+    color: var(--text-color);
+    font-size: 24px;
+}
+
+.foot-coral>* {
+    margin: 4px 0;
+}
+
+.foot-coral .fa-brands {
+    margin-right: 4px;
 }
 
 .foot-sky {
@@ -247,6 +290,10 @@ footer .footer-sect {
 
 .footer-cont .div-cont .btn {
     background-color: var(--text-color);
+}
+
+.foot-coral div img {
+    height: 10px;
 }
 
 /*XXXXXXXXXXXXXXXXXX

@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ffc0cb;
+    --secondary-color: #add8e6;
+    --third-color: #228b22;
+}
+
+/*XXXXXXXXXXXXXXXXXX
+XXXXXXGENERALXXXXXXX
+XXXXXXXXXXXXXXXXXX*/
+
+.border-dash {
+    border: 2px dashed black;
+}
+
+.border-fff {
+    border-color: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+/*XXXXXXXXXXXXXXXXXX
+XXXXXXXHEADERXXXXXXX
+XXXXXXXXXXXXXXXXXXX*/
+
+.header-section {
+    background-color: #add8e6;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-section .header-div {
+    background-color: #daa520;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-div>div {
+    padding: 8px;
+    width: max-content;
+}
+
+.header-div>div:first-child {
+    text-align: start;
+}
+
+.header-div>div:nth-child(2) {
+    text-align: center;
+}
+
+.header-div>div:last-child {
+    text-align: end;
+}
+
+.header ul {
+
+    display: flex;
+    gap: 14px;
+}
+
+/*XXXXXXXXXXXXXXXXXX
+XXXXXXXHEROXXXXXXXXX
+XXXXXXXXXXXXXXXXXXX*/
+
+#hero {
+    background-color: #00008b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+}
+
+#hero>div {
+    background-color: #ee82ee;
+    height: 200px;
+    width: 70vw;
+}
+
+/*XXXXXXXXXXXXXXXXXX 
+XXXXXXXXMAINXXXXXXXX
+XXXXXXXXXXXXXXXXXXXX*/
+
+.main-sect {
+    padding: 40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-sect {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sect-lightgray {
+    background-color: lightgray;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.sect-block {
+    height: 500px;
+}
+
+.block-blue {
+    width: 60%;
+    background-color: var(--secondary-color);
+}
+
+.block-pink {
+    width: 40%;
+    background-color: var(--primary-color);
+}
+
+.block-green {
+    background-color: var(--third-color);
+    width: 100%;
+}
+
+/*XXXXXXXXXXXXXXXXXX
+XXXXXXXFOOTERXXXXXXX
+XXXXXXXXXXXXXXXXXX*/
+
+footer {
+    background-color: #000;
+}
+
+footer .footer-sect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    padding: 12px 0 36px;
+    border-bottom: 2px solid gray;
+}
+
+.div-foot-sect {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-link {
+    height: 200px;
+}
+
+.foot-coral {
+    width: 33%;
+    background-color: #f08080;
+}
+
+.foot-sky {
+    width: 66%;
+    display: flex;
+    background-color: #20b2aa;
+}
+
+.foot-sky>div {
+    width: 25%;
+}
+
+.footer-cont {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.div-cont {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7fffd4;
+    height: 60px;
+}
+
+.div-cont div {
+    padding: 4px 8px;
+    background-color: #ffb6c1;
+}

@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+}
+
 :root {
-    --primary-color: #ffc0cb;
+    --primary-color: #255ee9;
     --secondary-color: #add8e6;
     --third-color: #228b22;
 }
@@ -13,6 +17,10 @@
 /*XXXXXXXXXXXXXXXXXX
 XXXXXXGENERALXXXXXXX
 XXXXXXXXXXXXXXXXXX*/
+
+body {
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 .border-dash {
     border: 2px dashed black;
@@ -26,23 +34,32 @@ li {
     list-style: none;
 }
 
+a {
+    color: inherit;
+}
+
+.btn {
+    padding: 8px 12px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
 /*XXXXXXXXXXXXXXXXXX
 XXXXXXXHEADERXXXXXXX
 XXXXXXXXXXXXXXXXXXX*/
 
 .header-section {
-    background-color: #add8e6;
-    height: 50px;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .header-section .header-div {
-    background-color: #daa520;
     width: 80vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-div>div {
@@ -62,10 +79,14 @@ XXXXXXXXXXXXXXXXXXX*/
     text-align: end;
 }
 
-.header ul {
-
+.header-section ul {
     display: flex;
-    gap: 14px;
+    gap: 20px;
+    color: #fff;
+}
+
+.header-section ul li {
+    padding: 8px;
 }
 
 /*XXXXXXXXXXXXXXXXXX
@@ -73,17 +94,41 @@ XXXXXXXHEROXXXXXXXXX
 XXXXXXXXXXXXXXXXXXX*/
 
 #hero {
-    background-color: #00008b;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 450px;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 50px;
 }
 
 #hero>div {
-    background-color: #ee82ee;
-    height: 200px;
     width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#hero h1 {
+    padding: 20px;
+}
+
+.hero-btn-cont {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.black {
+    background-color: #000;
+}
+
+.white {
+    color: #000;
 }
 
 /*XXXXXXXXXXXXXXXXXX 
@@ -114,21 +159,22 @@ XXXXXXXXXXXXXXXXXXXX*/
 }
 
 .sect-block {
-    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-.block-blue {
+.block-60 {
     width: 60%;
-    background-color: var(--secondary-color);
 }
 
-.block-pink {
+.block-40 {
     width: 40%;
-    background-color: var(--primary-color);
 }
 
 .block-green {
-    background-color: var(--third-color);
+    flex-direction: column;
+    align-items: center;
     width: 100%;
 }
 

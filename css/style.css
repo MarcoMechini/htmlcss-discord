@@ -209,6 +209,14 @@ XXXXXXXXXXXXXXXXXXXX*/
     color: #fff;
 }
 
+.main-sect h2 {
+    font-weight: 600;
+}
+
+.main-sect p {
+    font-weight: 500;
+}
+
 /*XXXXXXXXXXXXXXXXXX
 XXXXXXXFOOTERXXXXXXX
 XXXXXXXXXXXXXXXXXX*/
@@ -295,9 +303,3 @@ footer .footer-sect {
 .foot-coral div img {
     height: 10px;
 }
-
-/*XXXXXXXXXXXXXXXXXX
-XXXXXXXICONEXXXXXXXX
-XXXXXXXXXXXXXXXXXX*/
-
-.logo-x {}
